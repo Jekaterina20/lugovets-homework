@@ -2,40 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jekaterina Homework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jekaterina Lugovets – Homework</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
             margin: 0;
-            padding: 20px;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #cbe1ff, #f1f5ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        .container {
-            max-width: 700px;
-            margin: auto;
+
+        .card {
             background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 40px;
+            width: 450px;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            text-align: center;
+            animation: fadeIn 0.8s ease;
         }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
         h1 {
+            margin-top: 0;
+            font-size: 28px;
             color: #333;
         }
+
+        h2 {
+            margin: 10px 0;
+            color: #555;
+        }
+
         p {
-            font-size: 18px;
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .id-box {
+            margin-top: 20px;
+            padding: 12px;
+            background: #eef4ff;
+            border-left: 4px solid #4b75ff;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        footer {
+            margin-top: 25px;
+            font-size: 14px;
+            color: #888;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Jekaterina Lugovets</h1>
-        <h2>Homework Website</h2>
-        <p>This is my simple website for the university assignment “Domain registration and hosting”.</p>
-        <p>Created using GitHub Pages.</p>
 
-        <h3>Student ID:</h3>
-        <p><b>jelugo</b></p>
+<div class="card">
+    <h1>Jekaterina Lugovets</h1>
+    <h2>Homework Website</h2>
 
+    <p>
+        This website is created for the university assignment<br>
+        <strong>"Domain registration and hosting".</strong>
+    </p>
+
+    <p>
+        Hosted using <strong>GitHub Pages</strong>.
+    </p>
+
+    <div class="id-box">
+        Student ID: <strong>jelugo</strong>
     </div>
+
+    <footer>
+        © 2025. All rights reserved.
+    </footer>
+</div>
+
 </body>
 </html>
